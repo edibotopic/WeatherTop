@@ -17,8 +17,8 @@ Made for learning purposes.
 
 - [x] `report-store.js` implemented
 - [x] Station can have multiple reports
-- [ ] All parameters for reports: code, temp, wind speed and direction, pressure
-- [ ] Use appropriate weather codes
+- [x] All parameters for reports: code, temp, wind speed and direction, pressure
+- [x] Use appropriate weather codes
 
 ## v0.2.0 (release 2)
 
