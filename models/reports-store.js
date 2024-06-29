@@ -44,6 +44,8 @@ export const reportsStore = {
   async updateReport(report, updatedReport) {
     report.code = updatedReport.code;
     report.temp = updatedReport.temp;
+    report.wind_speed = updatedReport.wind_speed;
+    report.wind_direction = updatedReport.wind_direction;
     report.pressure = updatedReport.pressure;
     await db.write();
   },

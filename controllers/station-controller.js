@@ -16,6 +16,8 @@ export const stationController = {
     const newReport = {
       code: Number(request.body.code),
       temp: Number(request.body.temp),
+      wind_speed: Number(request.body.wind_speed),
+      wind_direction: Number(request.body.wind_direction),
       pressure: Number(request.body.pressure),
     }
     console.log(`adding report ${newReport.title}`)
