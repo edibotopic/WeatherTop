@@ -15,6 +15,6 @@ app.set("view engine", ".hbs");
 app.set("views", "./views");
 app.use("/", router);
 
-const listener = app.listen(process.env.PORT || 4000, function () {
-  console.log(`Todolist started on http://localhost:${listener.address().port}`);
+const listener = app.listen(process.env.PORT || 4000, function() {
+  console.log(`Weather app started on http://localhost:${listener.address().port}`);
 });

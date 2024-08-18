@@ -5,6 +5,10 @@ Made for learning purposes.
 
 # Todo
 
+## Urgent
+
+- [ ] After login the user needs to be returned or guided back to the dashboard
+
 ## v0.0.1 (baseline)
 
 - [x] Initial commit
@@ -22,12 +26,11 @@ Made for learning purposes.
 
 ## v0.2.0 (release 2)
 
-- [ ] Member sign-in
+- [x] Member sign-in
+- [x] User can create stations with userId and can see their stations
 - [ ] Wind direction dropdown
-- [ ] User can create stations with userId and can see their stations
 - [ ] Display icons for weather codes
 - [ ] Lat/lng, max/mins for a station, taken from data in reports
-
 
 ## v0.3.0 (release 3)
 
