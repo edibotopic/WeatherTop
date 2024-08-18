@@ -1,3 +1,7 @@
+v0.1.1
+
+User registration, login and authentication implemented.
+
 v0.1.0
 
 Release 1.
