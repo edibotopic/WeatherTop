@@ -1,0 +1,136 @@
+<!-- TODO: need to calculate min/max from inputted data -->
+
+<div class="columns is-8">
+  <div class="column">
+    <section class="card has-background-black">
+      <header class="card-header has-background-black">
+        <p class="card-header-title has-text-white is-centered">
+          Cork
+        </p>
+      </header>
+      <div class="card-image">
+        <figure class="image is-100x100">
+          <img
+            class="berlin"
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+          />
+        </figure>
+      </div>
+      <div class="card-content">
+      <div class="content has-background-black">
+        <ul class="has-background-black has-text-white">
+          <li>Lat: placeholder </li>
+          <li>Lng: placeholder </li>
+      </ul>
+      </div>
+    </section>
+  </div>
+    
+
+  <div class="column">
+    <section class="card has-background-black">
+      <header class="card-header">
+        <p class="card-header-title has-text-white is-centered">
+          Weather
+        </p>
+      </header>
+      <div class="card-image">
+        <figure class="image is-100x100">
+          <img
+            class="berlin"
+            src="https://openweathermap.org/img/wn/01n@2x.png"
+            alt=""
+          />
+        </figure>
+      </div>
+      <div class="card-content">
+      <div class="content">
+        <ul class="has-text-white">
+        <li>placeholder </li>
+        <li> </li>
+      </ul>
+      </div>
+    </section>
+      </div>
+
+  <div class="column">
+    <section class="card has-background-black">
+      <header class="card-header">
+        <p class="card-header-title has-text-white is-centered">
+          Temp
+        </p>
+      </header>
+      <div class="card-image">
+        <figure class="image is-100x100">
+          <img
+            class="berlin"
+            src="https://openweathermap.org/img/wn/01d@2x.png"
+            alt=""
+          />
+        </figure>
+      </div>
+      <div class="card-content">
+      <div class="content">
+        <ul class="has-text-white">
+            <li>Max: {{ temp_max }}</li>
+        <li>Min: {{ temp_min }}</li>
+      </ul>
+      </div>
+    </section>
+      </div>
+
+
+  <div class="column">
+    <section class="card has-background-black">
+      <header class="card-header">
+        <p class="card-header-title has-text-white is-centered">
+          Wind
+        </p>
+      </header>
+      <div class="card-image">
+        <figure class="image is-100x100">
+          <img
+            class="berlin"
+            src="https://openweathermap.org/img/wn/50d@2x.png"
+            alt=""
+          />
+        </figure>
+      </div>
+      <div class="card-content">
+      <div class="content">
+        <ul class="has-text-white">
+            <li>Max: {{ wind_max }} </li>
+            <li>Min: {{ wind_min }} </li>
+      </ul>
+      </div>
+    </section>
+      </div>
+
+
+  <div class="column">
+    <section class="card has-background-black">
+      <header class="card-header">
+        <p class="card-header-title has-text-white is-centered">
+          Pressure
+        </p>
+      </header>
+      <div class="card-image">
+        <figure class="image is-100x100">
+          <img
+            class="berlin"
+            src="https://openweathermap.org/img/wn/13d@2x.png"
+            alt=""
+          />
+        </figure>
+      </div>
+      <div class="card-content">
+      <div class="content">
+        <ul class="has-text-white">
+            <li>Max: {{ pressure_max }} </li>
+            <li>Min: {{ pressure_min}} </li>
+      </ul>
+      </div>
+    </section>
+      </div>
+  </div>
