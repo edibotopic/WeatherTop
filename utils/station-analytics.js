@@ -1,22 +1,20 @@
 export const stationAnalytics = {
-  getAve(station) {
-    let sum = 0;
-    if (station.reports.length > 0) {
-      for (let i = 0; i < station.reports.length; i++) {
-        sum += array[i];
-        }
+  getMax(reports, measure) {
+    if (reports && reports.length > 0) {
+      let data = []
+      for (let i = 0; i < reports.length; i++) {
+        data.push(reports[i][measure])
       }
+      return (Math.max(...data))
     }
-    return shortestTrack;
   },
-
-  // QUERY: needless?
-  getMax(array) {
-    Math.max(array);
-  },
-
-  getMin(array) {
-    Math.max(array);
-  },
-
-};
+  getMin(reports, measure) {
+    if (reports && reports.length > 0) {
+      let data = []
+      for (let i = 0; i < reports.length; i++) {
+        data.push(reports[i][measure])
+      }
+      return (Math.min(...data))
+    }
+  }
+}
