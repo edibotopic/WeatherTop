@@ -28,12 +28,13 @@ Made for learning purposes.
 
 - [x] Member sign-in
 - [x] User can create stations with userId and can see their stations
-- [ ] Wind direction dropdown
-- [ ] Display icons for weather codes
-- [ ] Lat/lng, max/mins for a station, taken from data in reports
+- [x] Lat/lng, max/mins for a station, taken from data in reports
+- [x] Placeholder images for weather icons
 
 ## v0.3.0 (release 3)
 
+- [ ] Wind direction dropdown
+- [ ] Display icons for weather codes
 - [ ] Time/date for reports
 - [ ] User can edit their details
 - [ ] Member dashboard lists latest conditions for all stations
