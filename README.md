@@ -36,8 +36,8 @@ Made for learning purposes.
 ## v0.2.2 (release 2 - final)
 
 - [ ] Display weather description in summary with image
-- [ ] Make better looking icons (including location)
-- [ ] Add units to all quantities
+- [x] Make better looking icons (including location)
+- [x] Add units to all quantities
 
 ## v0.3.0 (release 3)
 
