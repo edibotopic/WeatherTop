@@ -5,10 +5,6 @@ Made for learning purposes.
 
 # Todo
 
-## Urgent
-
-- [ ] After login the user needs to be returned or guided back to the dashboard
-
 ## v0.0.1 (baseline)
 
 - [x] Initial commit
