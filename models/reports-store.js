@@ -1,5 +1,3 @@
-//TODO: if at least one report exists we can calculate stats
-//check if a report exists, if it does then do min/max, etc.
 import { v4 } from "uuid";
 import { initStore } from "../utils/store-utils.js";
 
@@ -51,5 +49,4 @@ export const reportsStore = {
     report.pressure = updatedReport.pressure;
     await db.write();
   },
-
 };
