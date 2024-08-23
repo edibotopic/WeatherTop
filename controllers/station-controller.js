@@ -14,7 +14,7 @@ export const stationController = {
     let wind_min = stationAnalytics.getMin(reports, "wind_speed");
     let pressure_max = stationAnalytics.getMax(reports, "pressure");
     let pressure_min = stationAnalytics.getMin(reports, "pressure");
-    let weather_icon = reportSummaries.getLatestReports(reports);
+    let weather_icon = reportSummaries.getLatestReportElement(reports, "weather_icon");
 
     const viewData = {
       title: "Station",

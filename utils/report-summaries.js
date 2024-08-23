@@ -32,10 +32,10 @@ export const reportSummaries = {
     return img;
   },
 
-  getLatestReports(reports) {
+  getLatestReportElement(reports, element) {
     let latest = null;
     if (reports && reports.length > 0) {
-      latest = reports[reports.length - 1]["weather_icon"];
+      latest = reports[reports.length - 1][element];
     }
     return latest;
   }
