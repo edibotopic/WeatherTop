@@ -14,9 +14,25 @@
         <strong>Wind Speed</strong>
         <input class="input" type="text" placeholder="00.00km/h" name="wind_speed" />
       </div>
+
       <div class="field">
         <strong>Wind Direction</strong>
-        <input class="input" type="text" placeholder="000deg" name="wind_direction" />
+        <div class="control">
+          <div class="select">
+            <select name="wind_direction">
+              <option value="">Select direction</option>
+              <option value="N">N</option>
+              <option value="NE">NE</option>
+              <option value="E">E</option>
+              <option value="SE">SE</option>
+              <option value="S">S</option>
+              <option value="SW">SW</option>
+              <option value="W">W</option>
+              <option value="NW">NW</option>
+            </select>
+          </div>
+        </div>
+
       </div>
       <div class="field">
         <strong>Pressure</strong>
