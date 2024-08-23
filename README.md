@@ -32,7 +32,6 @@ Made for learning purposes.
 - [x] Wind direction dropdown selection
 - [x] Display icons for weather codes
 - [x] Latitude and longitude input
-- [ ] Display weather description in summary
 
 ## v0.2.2 (release 2 - final)
 
