@@ -31,10 +31,21 @@ Made for learning purposes.
 - [x] Lat/lng, max/mins for a station, taken from data in reports
 - [x] Placeholder images for weather icons
 
+## v0.2.1 (release 2 - revision)
+
+- [x] Wind direction dropdown selection
+- [x] Display icons for weather codes
+- [x] Latitude and longitude input
+- [ ] Display weather description in summary
+
+## v0.2.2 (release 2 - final)
+
+- [ ] Display weather description in summary with image
+- [ ] Make better looking icons (including location)
+- [ ] Add units to all quantities
+
 ## v0.3.0 (release 3)
 
-- [ ] Wind direction dropdown
-- [ ] Display icons for weather codes
 - [ ] Time/date for reports
 - [ ] User can edit their details
 - [ ] Member dashboard lists latest conditions for all stations
