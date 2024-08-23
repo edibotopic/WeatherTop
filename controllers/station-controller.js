@@ -1,6 +1,7 @@
 import { stationStore } from '../models/station-store.js'
 import { reportsStore } from '../models/reports-store.js'
 import { stationAnalytics } from "../utils/station-analytics.js";
+import { reportSummaries } from "../utils/report-summaries.js";
 
 export const stationController = {
   async index(request, response) {
@@ -13,6 +14,7 @@ export const stationController = {
     let wind_min = stationAnalytics.getMin(reports, "wind_speed");
     let pressure_max = stationAnalytics.getMax(reports, "pressure");
     let pressure_min = stationAnalytics.getMin(reports, "pressure");
+    let weather_icon = reportSummaries.getLatestReports(reports);
 
     const viewData = {
       title: "Station",
@@ -23,25 +25,27 @@ export const stationController = {
       wind_min: wind_min,
       pressure_max: pressure_max,
       pressure_min: pressure_min,
+      weather_icon: weather_icon,
     }
     response.render("station-view", viewData)
   },
 
   async addReport(request, response) {
+
     const station = await stationStore.getStationById(request.params.id)
+
     const newReport = {
       code: Number(request.body.code),
       temp: Number(request.body.temp),
       wind_speed: Number(request.body.wind_speed),
-      wind_direction: Number(request.body.wind_direction),
+      wind_direction: String(request.body.wind_direction),
       pressure: Number(request.body.pressure),
+      weather_icon: String(reportSummaries.weatherCodeToIcon(Number(request.body.code))),
     }
+
     console.log(`adding report ${newReport.title}`)
     await reportsStore.addReport(station._id, newReport)
+
     response.redirect("/station/" + station._id)
-
   }
-
-  //NOTE: do I need a getSummary method?
 }
-
