@@ -11,7 +11,6 @@
       <div class="card-image">
         <figure class="image is-100x100">
           <img
-            class="berlin"
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt=""
           />
@@ -20,8 +19,8 @@
       <div class="card-content">
       <div class="content has-background-black">
         <ul class="has-background-black has-text-white">
-          <li>Lat: placeholder </li>
-          <li>Lng: placeholder </li>
+            <li>Lat: {{ station.lat }} </li>
+            <li>Lng: {{ station.long }} </li>
       </ul>
       </div>
     </section>
@@ -38,8 +37,7 @@
       <div class="card-image">
         <figure class="image is-100x100">
           <img
-            class="berlin"
-            src="https://openweathermap.org/img/wn/01n@2x.png"
+            src="https://openweathermap.org/img/wn/{{{weather_icon}}}@2x.png"
             alt=""
           />
         </figure>
@@ -47,8 +45,8 @@
       <div class="card-content">
       <div class="content">
         <ul class="has-text-white">
-        <li>placeholder </li>
-        <li> </li>
+        <li>TODO: add status</li>
+        <li>TODO: other info</li>
       </ul>
       </div>
     </section>
@@ -64,7 +62,6 @@
       <div class="card-image">
         <figure class="image is-100x100">
           <img
-            class="berlin"
             src="https://openweathermap.org/img/wn/01d@2x.png"
             alt=""
           />
@@ -74,7 +71,7 @@
       <div class="content">
         <ul class="has-text-white">
             <li>Max: {{ temp_max }}</li>
-        <li>Min: {{ temp_min }}</li>
+            <li>Min: {{ temp_min }}</li>
       </ul>
       </div>
     </section>
@@ -91,7 +88,6 @@
       <div class="card-image">
         <figure class="image is-100x100">
           <img
-            class="berlin"
             src="https://openweathermap.org/img/wn/50d@2x.png"
             alt=""
           />
@@ -118,7 +114,6 @@
       <div class="card-image">
         <figure class="image is-100x100">
           <img
-            class="berlin"
             src="https://openweathermap.org/img/wn/13d@2x.png"
             alt=""
           />
@@ -128,7 +123,7 @@
       <div class="content">
         <ul class="has-text-white">
             <li>Max: {{ pressure_max }} </li>
-            <li>Min: {{ pressure_min}} </li>
+            <li>Min: {{ pressure_min }} </li>
       </ul>
       </div>
     </section>
