@@ -1,3 +1,9 @@
+v0.2.1
+
+Improved summary data to include dynamic weather
+icon determined by weather code and latitude/longitude
+entered by user.
+
 v0.2.0
 
 Summary data shown on station view.
