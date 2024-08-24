@@ -15,6 +15,7 @@ export const stationController = {
     let pressure_max = stationAnalytics.getMax(reports, "pressure");
     let pressure_min = stationAnalytics.getMin(reports, "pressure");
     let weather_icon = reportSummaries.getLatestReportElement(reports, "weather_icon");
+    let weather_desc = reportSummaries.getLatestReportElement(reports, "weather_desc");
 
     const viewData = {
       title: "Station",
@@ -26,6 +27,7 @@ export const stationController = {
       pressure_max: pressure_max,
       pressure_min: pressure_min,
       weather_icon: weather_icon,
+      weather_desc: weather_desc,
     }
     response.render("station-view", viewData)
   },
@@ -40,7 +42,8 @@ export const stationController = {
       wind_speed: Number(request.body.wind_speed),
       wind_direction: String(request.body.wind_direction),
       pressure: Number(request.body.pressure),
-      weather_icon: String(reportSummaries.weatherCodeToIcon(Number(request.body.code))),
+      weather_icon: String(reportSummaries.getWeatherDataFromCode(Number(request.body.code)).icon),
+      weather_desc: String(reportSummaries.getWeatherDataFromCode(Number(request.body.code)).description),
     }
 
     console.log(`adding report ${newReport.title}`)
