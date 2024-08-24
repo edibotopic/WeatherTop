@@ -1,3 +1,13 @@
+v0.2.2
+
+Release 2.
+Weather summary now includes a description based
+on the weather code.
+
+Static icons are now used for location, temperature,
+rain and pressure.
+They're not great but they'll do.
+
 v0.2.1
 
 Improved summary data to include dynamic weather
