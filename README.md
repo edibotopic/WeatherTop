@@ -41,10 +41,13 @@ Made for learning purposes.
 
 ## v0.3.0 (release 3)
 
-- [ ] Make the brand icon not a cat
-- [ ] Time/date for reports
-- [ ] User can edit their details
-- [ ] Member dashboard lists latest conditions for all stations
+In order of priority:
+
 - [ ] Members can delete reports or stations (or both)
+- [ ] User can edit their details
+- [ ] Time/date for reports
+- [ ] Make the brand icon not a cat
+- [ ] Deploy the site
+- [ ] Member dashboard lists latest conditions for all stations
 
 If release 3 is feature-complete can aim for release 4 (TBC).
