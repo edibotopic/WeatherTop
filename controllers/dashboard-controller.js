@@ -1,5 +1,6 @@
 import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
+import { DashSort } from "../utils/dash-sort.js";
 
 export const dashboardController = {
   async index(request, response) {
@@ -8,6 +9,8 @@ export const dashboardController = {
       title: "WeatherTop Dashboard",
       stations: await stationStore.getStationByUserId(loggedInUser._id),
     };
+    // sort alphabetically by station title before render
+    DashSort.sortAlpha(viewData.stations);
     console.log("dashboard rendering");
     response.render("dashboard-view", viewData);
   },
@@ -22,6 +25,13 @@ export const dashboardController = {
     };
     console.log(`adding station ${newStation.title}`);
     await stationStore.addStation(newStation);
+    response.redirect("/dashboard");
+  },
+
+  async deleteStation(request, response) {
+    const stationId = request.params.id;
+    console.log(`Deleting Station ${stationId}`);
+    await stationStore.deleteStationById(stationId);
     response.redirect("/dashboard");
   },
 };
