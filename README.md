@@ -41,12 +41,13 @@ Made for learning purposes.
 
 ## v0.3.0 (release 3)
 
-In order of priority:
-
-- [ ] Members can delete reports or stations (or both)
+- [x] Members can delete stations
+- [x] Members can delete reports
+- [x] Stations ordered alphabetically
+- [x] Make the brand icon not a cat
 - [ ] User can edit their details
 - [ ] Time/date for reports
-- [ ] Make the brand icon not a cat
+- [ ] Summaries shown on dashboard
 - [ ] Deploy the site
 - [ ] Member dashboard lists latest conditions for all stations
 
