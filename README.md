@@ -45,10 +45,22 @@ Made for learning purposes.
 - [x] Members can delete reports
 - [x] Stations ordered alphabetically
 - [x] Make the brand icon not a cat
+
+## v0.3.1 (release 3 - final)
+
+- [x] Time/date for reports
+- [ ] User can edit their details
+- [ ] Deploy the site
+- [ ] Maybe some better styles
+
+## v0.3.2 (future release)
+
 - [ ] User can edit their details
 - [ ] Time/date for reports
 - [ ] Summaries shown on dashboard
 - [ ] Deploy the site
 - [ ] Member dashboard lists latest conditions for all stations
 
-If release 3 is feature-complete can aim for release 4 (TBC).
+## Release 4
+
+Not attempted.
