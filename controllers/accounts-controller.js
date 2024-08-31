@@ -34,6 +34,36 @@ export const accountsController = {
     response.redirect("/");
   },
 
+  async show(request, response) {
+    const loggedInUser = await accountsController.getLoggedInUser(request);
+      const viewData = {
+        title: "Show Current User Details:", 
+        user: loggedInUser,
+      }
+      response.render("show-current-user", viewData);
+  }, 
+
+  async edit(request, response) {
+    const loggedInUser = await accountsController.getLoggedInUser(request);
+      const viewData = {
+        title: "Edit Current User Details:", 
+        user: loggedInUser,
+      }
+      response.render("edit-current-user", viewData);
+  }, 
+
+  async update(request, response) {
+    const updatedUser = {
+      firstName: request.body.firstName,
+      lastName: request.body.lastName,
+      email: request.body.email,
+      password: request.body.password,
+    };
+    const id = request.params.id;
+    await userStore.updateCurrentUser(id, updatedUser); 
+    response.redirect("/");
+  },
+
   async authenticate(request, response) {
     const user = await userStore.getUserByEmail(request.body.email);
     if (user) {

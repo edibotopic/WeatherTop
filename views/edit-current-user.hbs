@@ -1,0 +1,26 @@
+{{> menu active="account"}}
+
+<section class="section">
+  <h1 class="title">Update your details</h1>
+  <form class="box" action="/updatecurrentuser/{{user._id}}" method="POST">
+    <label>Hi {{user.firstName}} {{user.lastName}} — Update your account details below:</label>
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <input class="input" type="text" placeholder="enter first name" name="firstName">
+        </div>
+        <div class="field">
+          <input class="input" type="text" placeholder="enter last name" name="lastName">
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Email</label> <input class="input" type="text" placeholder="{{user.email}}" name="email">
+    </div>
+    <div class="field">
+      <label class="label">Password</label> <input class="input" type="password" placeholder="enter new password" name="password">
+    </div>
+    <div class="field is-grouped">
+      <button class="button is-link"> Confirm Update </button>
+    </div>
+  </form>
