@@ -1,0 +1,16 @@
+{{> menu active="account"}}
+
+<section class="section">
+  <h1 class="title">User details</h1>
+  <ul>
+    <li>First name: {{user.firstName}}</li>
+    <li>Second name: {{user.secondName}}</li>
+    <li>Email address: {{user.email}}</li>
+    <!-- <details> -->
+    <!--   <summary>ID (debug)</summary> -->
+    <!-- <li>{{user._id}}</li> -->
+    <!-- </details> -->
+  </ul>
+  <hr>
+  <a id="edit" class="button" href="/editcurrentuser/{{user._id}}"> Edit Account Details </a>
+</section>

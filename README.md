@@ -1,11 +1,28 @@
 # WeatherTop
 
-Weather reporting app with CRUD functionality.
+Weather reporting application with CRUD functionality.
+
 Made for learning purposes.
 
-# Todo
+## Running
 
-## v0.0.1 (baseline)
+Clone the repo and `cd` into the project directory.
+
+```
+npm install
+npm run dev
+```
+
+User data is stored as JSON in `models/db/`.
+The data persists locally but is ignored by
+Git during development.
+
+To test user creation/editing/deletion you
+will need to generate new users.
+
+## Todo
+
+### v0.0.1 (baseline)
 
 - [x] Initial commit
 - [x] Create GitHub repo
@@ -13,42 +30,54 @@ Made for learning purposes.
 - [x] Details page on station click
 - [x] `station-controller.js` implemented
 
-## v0.1.0 (release 1)
+### v0.1.0 (release 1)
 
 - [x] `report-store.js` implemented
 - [x] Station can have multiple reports
 - [x] All parameters for reports: code, temp, wind speed and direction, pressure
 - [x] Use appropriate weather codes
 
-## v0.2.0 (release 2)
+### v0.2.0 (release 2)
 
 - [x] Member sign-in
 - [x] User can create stations with userId and can see their stations
 - [x] Lat/lng, max/mins for a station, taken from data in reports
 - [x] Placeholder images for weather icons
 
-## v0.2.1 (release 2 - revision)
+### v0.2.1 (release 2 - revision)
 
 - [x] Wind direction dropdown selection
 - [x] Display icons for weather codes
 - [x] Latitude and longitude input
 
-## v0.2.2 (release 2 - final)
+### v0.2.2 (release 2 - final)
 
 - [x] Display weather description in summary with image
 - [x] Make better looking icons (including location)
 - [x] Add units to all quantities
 
-## v0.3.0 (release 3)
+### v0.3.0 (release 3)
 
 - [x] Members can delete stations
 - [x] Members can delete reports
 - [x] Stations ordered alphabetically
 - [x] Make the brand icon not a cat
+
+### v0.3.1 (release 3 - final)
+
+- [x] Time/date for reports
+- [x] User can edit their details
+- [ ] Deploy the site
+
+### v0.3.2 (future release)
+
 - [ ] User can edit their details
 - [ ] Time/date for reports
 - [ ] Summaries shown on dashboard
 - [ ] Deploy the site
 - [ ] Member dashboard lists latest conditions for all stations
+- [ ] Some better styles
 
-If release 3 is feature-complete can aim for release 4 (TBC).
+### Release 4
+
+Not attempted.

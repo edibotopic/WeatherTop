@@ -21,3 +21,7 @@ router.get("/signup", accountsController.signup)
 router.get("/logout", accountsController.logout)
 router.post("/register", accountsController.register)
 router.post("/authenticate", accountsController.authenticate)
+
+router.get("/editcurrentuser/", accountsController.show);
+router.get("/editcurrentuser/:id", accountsController.edit);
+router.post("/updatecurrentuser/:id", accountsController.update);
