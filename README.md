@@ -15,10 +15,27 @@ npm run dev
 
 User data is stored as JSON in `models/db/`.
 The data persists locally but is ignored by
-Git during development.
+Git during development, which keeps the repo
+clean.
 
 To test user creation/editing/deletion you
 will need to generate new users.
+
+## Features
+
+Some notable features include:
+
+- Signup, login and logout independent users
+- User-specific sessions
+- Users can add multiple stations
+- Dashboard organise stations alphabetically
+- Users can add multiple reports per station
+- Multiple data input methods (text and dropdown)
+- Unique date/time for each report added
+- Summary data generated from reports
+- Weather summary icon generated based on weather code
+- Individual stations and reports can be deleted by user
+- Users can edit their personal details
 
 ## Todo
 
@@ -67,7 +84,7 @@ will need to generate new users.
 
 - [x] Time/date for reports
 - [x] User can edit their details
-- [ ] Deploy the site
+- [x] Deploy the site
 
 ### v0.3.2 (future release)
 
@@ -77,4 +94,4 @@ will need to generate new users.
 
 ### Release 4
 
-Not attempted.
+Not attempted — insufficient time.
