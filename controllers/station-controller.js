@@ -2,6 +2,7 @@ import { stationStore } from '../models/station-store.js'
 import { reportsStore } from '../models/reports-store.js'
 import { stationAnalytics } from "../utils/station-analytics.js";
 import { reportSummaries } from "../utils/report-summaries.js";
+import { getCurrentTime } from "../utils/date-and-time.js";
 
 export const stationController = {
   async index(request, response) {
@@ -44,6 +45,7 @@ export const stationController = {
       pressure: Number(request.body.pressure),
       weather_icon: String(reportSummaries.getWeatherDataFromCode(Number(request.body.code)).icon),
       weather_desc: String(reportSummaries.getWeatherDataFromCode(Number(request.body.code)).description),
+      time: String(getCurrentTime()),
     }
 
     console.log(`adding report ${newReport.title}`)
