@@ -71,12 +71,9 @@ will need to generate new users.
 
 ### v0.3.2 (future release)
 
-- [ ] User can edit their details
-- [ ] Time/date for reports
 - [ ] Summaries shown on dashboard
-- [ ] Deploy the site
 - [ ] Member dashboard lists latest conditions for all stations
-- [ ] Some better styles
+- [ ] Better icons, styling, theming
 
 ### Release 4
 
